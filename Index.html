@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--The title element in he head section of our html element is going to be used 
+        by our browser to set the title of our page on the tab-->
+        <title> Caleb's Online Portfolio | Home</title>
+        <!--The meta tag has a bunch of things we can define for it based on what we set
+        for the name attribute. In our case, we want to use the tag for description so 
+        we set it as such. The desciption in the content attribute is what appears under
+        our title whenever you search in Google-->
+        <meta name="description" content="Caleb's web portfolio...">
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .header-nav-sticky { 
+                position: relative;
+                top: 0;
+            }
+
+            @supports (position: sticky) {
+                .header-nav-sticky {
+                    position: -webkit-sticky;
+                    position: -moz-sticky;
+                    position: -ms-sticky;
+                    position: -o-sticky;
+                    position: sticky;
+                    top: 0;
+                }                
+            }
+        </style>        
+    </head>
+    <body>
+        <header>
+            <br>
+            
+            <h1 class="developer-name "> Caleb Tetteh </h1>
+             
+            <br>
+            <br>
+            
+            <div class="intro">
+                <p>
+                    Hi,  
+                    <br>
+                    <br>
+                    I am especially interested in UI designing, full-stack software development, and cybersecurity. 
+                    <!--<br>    
+                    My thread combinations are information-internetworks and media. My 
+                    interests -->
+                    <br>
+                    I am a computer science student at   
+                    Georgia Institute of Technology and in my junior year.
+                    
+                    
+                </p> 
+                
+                <div class="flex">
+                    
+                    <a href="https://www.linkedin.com/in/calebtetteh" target="_blank"><img src="Images/linkedin_logo.gif" ></a> 
+                    <a href="https://github.com/Cal3123" target="_blank"><img src="Images/github_logo.png"></a> 
+                    
+                </div>  
+                     
+            </div>
+            
+            <br>
+            <br> 
+            <!--The br tag is a line break tag. It adds line break whever it is-->
+        </header> 
+        
+        <nav class="main-nav nav header-nav-sticky">
+            <ul>
+                <li><a href="#projects">PROJECTS</a></li> 
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li> 
+                <li><a href="#contact">CONTACT</a></li> 
+                <li><a href="">RESUME</a></li> 
+                  
+            </ul>
+        </nav>
+        <br>
+        <section class="container content-section"  >
+            <h2 id ="skills" class="section-header">SKILLS</h2>
+            <br>
+            <p>
+                <span class="section-sub-header">Programming: </span> Python, Java, C++, CSS, HTML, C programming, JavaScript, Node.js, SQL, MQL, EJS
+                <br>
+                <br>
+                <span class="section-sub-header">Concepts: </span> Object-oriented programming, data structures, computer organization and programming, 
+                discrete mathematics, linear algebra, multivariable calculus, virtualization in cloud computing,
+                systems programming
+                <br>
+                <br>
+                <span class="section-sub-header">Operating Systems: </span> Unix, Linux, Windows
+                <br>
+                <br>
+                <span class="section-sub-header">Frameworks & Tools: </span> GitHub, Git, Pycharm, IntelliJ IDEA, Heroku, Figma, React, Express.js, MongoDB, MySQL 
+                <br>
+                <br>
+                <span class="section-sub-header">Languages: </span> Chinese (conversational), French (conversational), English (Fluent)
+
+            </p>
+   
+        </section>
+
+        <span id ="projects"> 
+        <section class = "container content-section">
+           
+            <h2  class="section-header">PROJECTS</h2>
+            <div  class= "projects"> 
+                <div class="clump">
+                    <div class="section-sub-header">MyOnline Library</div>
+                    <div class="project ">  
+                        <img class="project-image" src="Images/myonline_library.jpg">
+                        <div class="middle">
+                            <p>
+                                An online library created to allow users to a search, remove,
+                                and add books onto it. 
+                                <br> 
+
+                                <span class="go-to-website">  <a href="#myOnlineLibrary">  Click here </a> <span>
+                                to know frontend and backend technologies used in develpment.
+                            </p>
+                            <br>
+                            <a class="text" href="">            
+                                Go to App        
+                            </a>
+                        </div>
+                    </div>   
+                </div> 
+
+                <div class="clump">
+                    <div class="section-sub-header">User Authentucation Software</div> 
+                    <div class="project ">  
+                        <img class="project-image" src="Images/user_authentication.png">
+                        <div class="middle">
+                            <p>
+                                A user authentication software developed to delete, update, and create accounts.
+                                <br> 
+
+                                <span class="go-to-website">  <a href="#userAuthentication">  Click here </a> <span>
+                                to know frontend and backend technologies used in creation. 
+                            </p>
+                            <br> 
+                            <a class="text" href="">            
+                                Go to App        
+                            </a>
+                             
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="clump">
+                    <div class="section-sub-header">Record Label</div> 
+                    <div class="project"> 
+                        <img class="project-image" src="Images/record_label.jpg">
+                        <div class="middle">
+                            <p>
+                                A modern website for a fictional record label and it's artists. 
+                                <br>
+
+                                <span class="go-to-website">  <a href="#recordLabel">  Click here </a> <span>
+                                to know frontend technologies used to build the site. 
+                            </p>
+                            <br> 
+
+                            <a class="text" href="">            
+                                Go to Site        
+                            </a>
+                        </div>
+                    </div> 
+                </div>    
+
+                <div class="clump">
+                    <div class="section-sub-header">UI/UX Designs</div>
+                    <div class="project"> 
+                        <img class="project-image" src="Images/ui_design.jpg">
+                        <div class="middle">
+                            <p>
+                                An intial wireframe, and a prototype for a website geared towards
+                                providing online training courses to users. 
+                                <br>
+
+                                <span class="go-to-website">  <a href="#uiDesigns">  Click here </a> <span>
+                                to know which prototyping tool I used. 
+                            </p>
+                            <br> 
+                            
+                            <a class="text" href="">            
+                                Go to Site        
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="clump">
+                    <div class="section-sub-header">Tetteh Shell</div>
+                    <div class="project "> 
+                        <img class="project-image" src="Images/tetteh_shell.png">
+                        <div class="middle">
+                            <p>
+                                A shell developed to perform multiple pipe commands, and
+                                scripting commands like cat, ls, rm, find, wc, sort, mkdir, et cetera.  
+                                <br>
+                                <span class="go-to-website">  <a href="#tettehShell">  Click here </a> <span>
+                                to know  the backend technologies used to build the shell. 
+                            </p>
+                            <br> 
+                            
+                            <a class="text" href="https://youtu.be/wTkIxbKQaT0" target="_blank">            
+                                View        
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="clump">
+                    <div class="section-sub-header">Game Of Craps</div>
+                    <div class="project"> 
+                        <img class="project-image" src="Images/game_of_craps.png">
+                        <div class="middle">
+                            <p>
+                                Game of craps is a game of chance.
+                                <br> 
+                                A player wins or losses 
+                                to the house depending on the sum of randomized outputs of two dices.
+                                <br>
+
+                                <span class="go-to-website">  <a href="#craps">  Click here </a> <span>
+                                to know backend technologies used to create the game. 
+                            </p>
+                            <br> 
+                            
+                            <a class="text" href="https://youtu.be/uQVDjnqmArE" target="_blank">            
+                                View       
+                            </a>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="clump">
+                <div class="section-sub-header">Password Generator</div>
+                <div class="project"> 
+                    <img class="project-image" src="Images/password_generator.png">
+                    <div class="middle">
+                        <p>
+                            A program developed to generate multiple letter and digit password combinations of 
+                            varied lengths. 
+                            <span class="go-to-website">  <a href="#passwordGenerator">  Click here </a> <span>
+                            to know backend technologies used to create this pragram. 
+                        </p>
+                        <br> 
+                        
+                        <a class="text" href="https://youtu.be/wnPDkCV_e5Y" target="_blank">            
+                            View       
+                        </a>
+                </div> 
+            </div>
+        </div>
+        </section>
+
+        <section class="container content-section  "  >
+            <h2 id ="technologies" class="section-header">PROJECTS' TECHNOLOGIES</h2>
+            <br> 
+            <br>
+
+            <span id ="myOnlineLibrary"></span>
+            <h3>MyOnline Library</h3>
+            <br>
+
+            <p>
+                An online library created to allow users to a search, remove,
+                and add books onto it. Below are technologies used for the ui/ux design, 
+                the frontend development, and the backend development.
+            </p>
+            <br> 
+
+            <div class="flexx">
+                <div>
+                    <div class="section-sub-header">UI/UX</div> 
+                        <div class="flex">
+                            <div><img src="Images/figma_logo.png"> </div>
+                            <div>Figma</div>
+                        </div>
+                </div>
+                <div> 
+                    <div class="section-sub-header">Frontend</div> 
+                        <div class="flexx" >
+                            <div class="flex">
+                                <div><img src="Images/ejs_logo.png"> </div>
+                                <div>EJS</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/css_logo.png"> </div>
+                                <div>CSS</div>
+                            </div>  
+                        </div>
+                </div>
+                <div>
+                    <div class="section-sub-header">Backend</div>  
+                        <div class="flexx" >
+                            <div class="flex">
+                                <div><img src="Images/database_logo.png"> </div>
+                                <div>MongoDb</div>
+                            </div>
+                            <div class="flex">
+                                <div><img src="Images/backend_logo.png"> </div>
+                                <div>Express Js</div>
+                            </div>
+                            <div class="flex">
+                                <div><img src="Images/nodejs_logo.png"> </div>
+                                <div>Node Js</div>
+                            </div>
+                        </div>
+                </div>
+            </div>            
+                   
+            
+            <span id ="userAuthentication"></span>
+            <h3>User Authentication Software</h3>
+            <br>
+
+            <p>
+                A user authentication software developed to delete, update, and create accounts. Technologies used for the ui/ux design, 
+                the frontend development, and the backend development are listed below.
+            </p>
+            <br> 
+
+            <div class="flexx">
+                <div >
+                    <div class="section-sub-header">UI/UX</div> 
+                        <div class="flex">
+                            <div><img src="Images/figma_logo.png"> </div>
+                            <div>Figma</div>
+                        </div>
+                </div>
+                <div>    
+                    <div class="section-sub-header">Frontend</div>  
+                        <div class="flexx" >
+                            <div class="flex">
+                                <div><img src="Images/react_logo.png"> </div>
+                                <div>React</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/css_logo.png"> </div>
+                                <div>CSS</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/html_logo.jpg"> </div>
+                                <div>HTML</div>
+                            </div> 
+                        </div>
+                </div>
+                <div>
+                    <div class="section-sub-header">Backend</div>  
+                        <div class="flexx" >
+                            <div class="flex">
+                                <div><img src="Images/database_logo.png"> </div>
+                                <div>MongoDb</div>
+                            </div>
+                            <div class="flex">
+                                <div><img src="Images/backend_logo.png"> </div>
+                                <div>Express Js</div>
+                            </div>
+                            <div class="flex">
+                                <div><img src="Images/nodejs_logo.png"> </div>
+                                <div>Node Js</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+ 
+
+            <span id ="recordLabel"></span>
+            <h3>Record Label</h3>
+            <br>
+            <p>
+                A modern website for a fictional record label and it's artists. Technologies
+                used for developing the website are listed below.
+            </p>
+            <br> 
+
+            <div class="flexx">
+                <div>
+                    <div class="section-sub-header">UI/UX</div>  
+                        <div class="flex">
+                            <div><img src="Images/figma_logo.png"> </div>
+                            <div>Figma</div>
+                        </div>
+                </div>
+                <div>    
+                    <div class="section-sub-header">Frontend</div>  
+                        <div class="flexx" >  
+                            <div class="flex">
+                                <div><img src="Images/css_logo.png"> </div>
+                                <div>CSS</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/html_logo.jpg"> </div>
+                                <div>HTML</div>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+
+
+            <span id ="uiDesigns"></span>
+            <h3>UI/UX Designs</h3>
+            <br>
+
+            <p>
+                An intial wireframe, and a prototype for a website geared towards
+                providing online training courses to users. The technology used for
+                designing the project is listed below.
+            </p>
+            <br>
+
+            <div class="flexx">
+                <div>
+                    <div class="section-sub-header">UI/UX</div>  
+                        <div class="flex">
+                            <div><img src="Images/figma_logo.png"> </div>
+                            <div>Figma</div>
+                        </div>
+                </div>
+            </div>
+                      
+
+            <span id ="tettehShell"></span>
+            <h3>Tetteh Shell</h3>
+            <br>
+            
+            <p>
+                A shell developed to perform multiple pipe commands, and
+                scripting commands like cat, ls, rm, find, wc, sort, mkdir, et cetera. 
+                Technologies used for buiding the shell are listed below. 
+            </p>
+            <br>
+
+            <div class="flexx">
+                <div>    
+                    <div class="section-sub-header">Tools</div>  
+                        <div class="flexx" >  
+                            <div class="flex">
+                                <div><img src="Images/unix.png"> </div>
+                                <div> Unix OS</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/c_programming_language.png"> </div>
+                                <div>C </div>
+                            </div> 
+                        </div>
+                </div>
+            </div>         
+        
+
+            <span id ="craps"></span>
+            <h3>Game Of Craps</h3>
+            <br>
+            
+            <p>
+                A player wins or losses  to the house depending on the sum of randomized 
+                outputs of two dices. Tools used in creating the game are listed below.
+            </p>
+            <br>
+
+            <div class="flexx">
+                <div>    
+                    <div class="section-sub-header">Tools</div>  
+                        <div class="flexx" >  
+                            <div class="flex">
+                                <div><img src="Images/unix.png"> </div>
+                                <div> Unix OS</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/c_programming_language.png"> </div>
+                                <div>C </div>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+
+
+            <span id ="passwordGenerator"></span>
+            <h3>Password Generator</h3>
+            <br>
+            
+            <p>
+                A player wins or losses  to the house depending on the sum of randomized 
+                outputs of two dices. Tools used in creating the game are listed below.
+            </p>
+            <br>
+
+            <div class="flexx">
+                <div>    
+                    <div class="section-sub-header">Tools</div>  
+                        <div class="flexx" >  
+                            <div class="flex">
+                                <div><img src="Images/python_logo.png"> </div>
+                                <div>Pycharm</div>
+                            </div> 
+                            <div class="flex">
+                                <div><img src="Images/pycharm_logo.png"> </div>
+                                <div>Python </div>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+   
+        </section>
+
+        <section class="container content-section">
+            <h2 id ="aboutme" class="section-header">ABOUT ME</h2>
+            <br>
+            <p>   
+                I am confident in my ability to work within a team and / or on my own. 
+                I posses strong  technical abilities and excellent soft skills, which were 
+                acquired over the years from the completion of multiple school projects, to personal
+                projects, as well as on the job experience.
+                <br>
+                <br>
+                During my free time, I like to travel, watch movies, make beats, mix, master, and record music
+                for fun.
+            </p>
+   
+        </section>
+
+        <section class="container content-section"  >
+            <h2 id ="contact" class="section-header">CONTACT</h2> 
+                <div class="flex">
+                    <div> <img src="Images/phone_logo.png"> </div>
+                    <div>001-4706999528</div>
+                </div>
+                <div class="flex"> 
+                    <div> <img src="Images/email_logo.png"> </div>
+                    <div>  tettehcaleb@gmail.com </div>
+                </div>   
+        </section>
+    </body>
+</html>

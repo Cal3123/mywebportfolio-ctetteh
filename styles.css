@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway";
+    /*font-family: Raleway;*/
+    color: #000000;
+    font-size: 22px;
+    padding: 0;
+    margin:  0;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+ 
+body {
+    /*
+    background: linear-gradient(to right, rgb(57, 56, 56), rgb(0, 0, 0));*/
+    background: rgb(240, 232, 221)
+     
+} 
+/*
+.main-header-cover-image {
+    /*The reason reason why he chose to dilute the color and not off the rip 
+    choose a #grey is so that he can see through for cover image to be visible.
+    If he had choose traditional grey, actual image won't be see through
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url("Images/MajorRecords.jpg");
+    /*Now we have a background image with actual visible colors and then we have 
+    a tansparent. This here belnds the two giving the overall bacground a smokey look
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+*/
+.developer-name {
+    text-align: center;
+    margin: 0;
+    font-size: 5.9rem;
+    padding-top : 1.5rem;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+     
+}
+
+.intro {
+    text-align: center; 
+    margin-top: 1rem;
+} 
+
+.nav li {
+    display: inline; 
+    margin: 1rem;
+}
+.main-nav  {
+    display: flex;
+    justify-content:  center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;     
+    /*
+    background-color: rgba(0, 0, 0,0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    */
+}
+.nav a { 
+    display: inline-block;
+    font-weight: lighter;
+    padding: .5rem; 
+    font-size: 1em;
+    text-decoration: none;
+} 
+
+.nav a:hover { 
+    background-color: rgba(255, 255, 255, .6) ;
+}
+
+
+
+.content-section {
+    /*I don't know the purpose of thei left-and-right margin value 2*/
+    margin: 1rem 2rem;
+    
+    /*background: linear-gradient(to right, rgb(57, 56, 56), rgb(0, 0, 0)); */
+
+}
+
+.container {
+    max-width: 1200px;
+    /*Not really clear on what auto means*/
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-header {
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    color: #333;
+    text-align: left;
+    font-size: 1em;
+} 
+
+.section-sub-header {
+    font-weight: 600;
+    color: #333; 
+    font-size: 1em;
+} 
+
+/**
+ 
+
+.artist-anchor {
+    text-align: center;
+}
+
+.artist-anchor li {
+    display: inline;
+}
+
+.artist-anchor a {
+    display: inline-block; 
+    text-decoration: none;
+    
+}
+
+.artist-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+/*rgba(255, 255, 255, .1);
+rgba(20, 20, 20, .3);
+.artist-header:hover {
+    color: rgba(20, 20, 20, .3);
+     
+}
+**/
+/**/
+
+/*THis is suppose to be in .content-section with exception of justify content*/
+ 
+ 
+.clump {
+    margin: 1.5rem 1rem 2rem 1rem ;
+}
+
+.project {
+    position: relative; 
+    margin-top: 1.5rem;
+    background-color: rgba(165, 42, 42, 0.5);
+    /*background-color: #56CCF2;
+    background-color: rgba(86.3%, 68.2%, 58.8%, 0.5);
+    */
+
+    /*The purpose of this is to keep descriptive texts in and within image frame/box*/
+    width: 450px;
+    height:390px;
+}
+.project:hover .project-image { 
+    /*So art has a background color  but it is not made visible beacuse image is 
+    covering it. Once you hover on the image. This attribute kickstarts making the 
+    image see through so that you can see the backroung color */
+    opacity: 0.3;  
+     
+}
+
+.project-image {
+    /*This is what is floating the image to the left  of content and not ontop*/
+    opacity: 1;
+    display: block;    
+    
+    /*width: 450px;*/
+    width: 450px;
+    height:390px;
+    
+    transition: .5s ease;
+    backface-visibility: hidden;  
+}
+
+.middle {
+    display: inline-block;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;     
+}
+
+.middle a {
+    color: none;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.project:hover .middle {
+    opacity: 1;
+}
+
+.go-to-website a {
+    color: #1fb4e6;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+/*
+.main-footer-container {
+    
+    display: flex;
+    align-items: center; 
+}*/
+
+.main-footer-container ul {
+    /*flex-grow: 1;*/
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+
+
+.shop-item-title {
+    display: block;
+    /*Means width should stretch to 100% of it's content*/
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    /*Since height is only stated, CSS automatically gives width the same value*/ 
+    /*The width of the image is what is affecting the wide strechness of shop-item-details (beacuse of the
+    flex:grow property of shop-item-price) and the width of it's parent shop-item class
+    beacuse it is the biggest width since shop-item has no defined width.*/
+    /*
+    Explanation: shop-item-details is in another box called shop-item whose
+    width is not defined. If the image becomes bigger length and breadth
+    wise the shop-item box also streches since it is contained in it. Hence the div box
+    of shop-item-details also have more room or extra space to it's right but it does
+    not become wide just yet. Without flex-grow, the text in shop-item-price will be right next 
+    to the button. But since there is a flex-grow property. The flex-grow: 1 property of 
+    shop-item-price then takes that extra space and add it to only itself, it does not share it 
+    with adjacent button since none of it classes declares a flex-grow property. */
+    height: 250px;
+}
+
+.shop-item-details {
+    /*display-flex flexes items to be horizaontally aligned*/
+    display: flex; 
+    /*align-items align items on the crossectional axis/direaction of dsiplay: flex/flex-driection: 'value'
+    respectivelly. In this case on the y-axis. Hence it align items to the veritcal center and not horizontal 
+    center.  */ 
+    align-items: center; 
+    padding: 5px;
+}
+
+.shop-item-price {
+    /*Without flex-grow, the text in shop-item-price will be right next to the button. flex-grow: 1 takes whatever
+    extra space in shop-item-details div and gives it to price. Flex-grow applies to only
+    the div element it is assigned to respective to the amount of space within it's parent*/
+    flex-grow: 1 ;
+    color: #333;
+}
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/*Styling in this selector is then marched with each element in the form row*/
+.form-item{
+    display: flex;
+    /*flex-direction is column so that our label element will always be on top/be first b4 our input element*/
+    flex-direction: column; 
+    /*leaves 2rem to the left of each item*/
+    margin-left: 2rem;
+    /*This defines our element spacing out and growing as large as possible to right*/
+    flex-grow: 1;
+    /*To make sure that each item have the same exact width we define flex-basis: to be 0 so 
+    they both grow from th e same point*/
+    flex-basis:0;
+    margin-bottom: .5rem;
+}
+
+.align-end   {
+    justify-content: end;
+}
+
+/*Not needed*/
+.align-start   {
+    justify-content: start;
+}
+
+.align-center   {
+    justify-content: center;
+}
+
+.flexx {
+    display: flex;
+    margin: 0 2rem 2rem 2rem;
+    justify-content:space-between;
+}
+
+.flex div {
+    margin-right : 2rem;
+    margin-left: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.flex img {   
+    width: 30px;
+    height: 30px;
+}
+
+ 
