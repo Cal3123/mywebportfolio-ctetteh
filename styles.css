@@ -541,6 +541,7 @@ rgba(20, 20, 20, .3);
 .align-up-arrow {
     display: flex;
     justify-content: right;
+    padding: 1rem;
     margin : 2rem;
 }
 
