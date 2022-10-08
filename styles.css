@@ -538,4 +538,14 @@ rgba(20, 20, 20, .3);
     height: 30px;
 }
 
+.align-up-arrow {
+    display: flex;
+    justify-content: right;
+    margin : 2rem;
+}
+
+.align-up-arrow img{
+    width: 45px;
+    height: 45px;
+}
  
